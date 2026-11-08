@@ -1,16 +1,93 @@
-# React + Vite
+❄️ MasterCool — Professional AC Service Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+🌟 Features
 
-Currently, two official plugins are available:
+🌓 Dark & Light Mode Toggle: Smooth dynamic theme switching for modern user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🧮 Interactive Cost Calculator: Real-time price estimation slider based on service packages and AC unit count.
 
-## React Compiler
+📲 Direct WhatsApp Order Integration: Auto-formatted messaging for instant service booking via WhatsApp API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📱 Mobile-First & Responsive UI: Fully responsive layout optimized for mobile screens, tablets, and desktop displays.
 
-## Expanding the Oxlint configuration
+⚡ Lightning Fast Performance: Powered by Vite bundler and Tailwind CSS (v4) utility framework.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+🐳 Production-Ready Docker Setup: Multi-stage build containerization with Nginx web server integration.
+
+🏗️ Project Architecture
+
+Built using standard frontend best practices with clear separation of concerns:
+
+src/
+├── constants/
+│   └── servicesData.js       # Static data (Services, Pricing, FAQs, Testimonials)
+├── utils/
+│   └── formatCurrency.js     # Currency formatting & WhatsApp URL helpers
+├── hooks/
+│   └── useCalculator.js      # Custom React Hook for real-time price calculation
+├── components/
+│   ├── ServiceCard.jsx       # Pricing card component
+│   ├── CostCalculator.jsx    # Dynamic cost estimation component
+│   ├── Guarantees.jsx        # Trust badge section component
+│   ├── Testimonials.jsx      # Customer reviews component
+│   └── OrderModal.jsx        # Modal form component for WhatsApp orders
+└── App.jsx                   # Main layout container
+
+
+🛠️ Tech Stack
+
+Frontend: React 18+, Vite
+
+Styling: Tailwind CSS (v4), Lucide React (Icons)
+
+Containerization: Docker (Multi-stage build), Nginx (Alpine)
+
+Deployment: Vercel / Netlify / Docker Container
+
+🚀 Quick Start
+
+Prerequisites
+
+Node.js (v18 or higher)
+
+npm or yarn
+
+Installation & Local Setup
+
+Clone the repository:
+
+git clone git@github.com:aldinmbrk/react-landing-mastercool.git
+cd react-landing-mastercool
+
+
+Install dependencies:
+
+npm install
+
+
+Start development server:
+
+npm run dev
+
+
+Open your browser and navigate to http://localhost:5173.
+
+🐳 Docker Deployment
+
+Run the application inside a lightweight container powered by Nginx:
+
+# Build and run with Docker Compose
+docker compose up -d --build
+
+
+Access the production build at http://localhost:8080.
+
+🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the issues page.
+
+📝 License
+
+Distributed under the MIT License. See LICENSE for more information.
