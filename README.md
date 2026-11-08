@@ -1,23 +1,30 @@
-❄️ MasterCool — Professional AC Service Landing Page
+# ❄️ MasterCool — Professional AC Service Landing Page
 
-🌟 Features
+![React](https://img.shields.io/badge/React-18+-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-Bundler-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-🌓 Dark & Light Mode Toggle: Smooth dynamic theme switching for modern user experience.
+A modern, highly responsive, and conversion-optimized landing page built for local AC service businesses. Features an interactive cost calculator, dark/light mode switching, and direct-to-WhatsApp booking integration.
 
-🧮 Interactive Cost Calculator: Real-time price estimation slider based on service packages and AC unit count.
+---
 
-📲 Direct WhatsApp Order Integration: Auto-formatted messaging for instant service booking via WhatsApp API.
+## 🌟 Features
 
-📱 Mobile-First & Responsive UI: Fully responsive layout optimized for mobile screens, tablets, and desktop displays.
+- **🌙 Dark & Light Mode Toggle**: Smooth dynamic theme switching for a modern user experience.
+- **🧮 Interactive Cost Calculator**: Real-time price estimation slider based on service packages and AC unit count.
+- **📱 Direct WhatsApp Order Integration**: Auto-formatted messaging for instant service booking via WhatsApp API.
+- **⚡ Mobile-First & Responsive UI**: Fully responsive layout optimized for mobile screens, tablets, and desktop displays.
+- **🚀 Lightning Fast Performance**: Powered by Vite bundler and Tailwind CSS (v4) utility framework.
+- **🐳 Production-Ready Docker Setup**: Multi-stage build containerization with Nginx web server integration.
 
-⚡ Lightning Fast Performance: Powered by Vite bundler and Tailwind CSS (v4) utility framework.
+---
 
-🐳 Production-Ready Docker Setup: Multi-stage build containerization with Nginx web server integration.
-
-🏗️ Project Architecture
+## 📁 Project Architecture
 
 Built using standard frontend best practices with clear separation of concerns:
 
+```text
 src/
 ├── constants/
 │   └── servicesData.js       # Static data (Services, Pricing, FAQs, Testimonials)
@@ -32,62 +39,66 @@ src/
 │   ├── Testimonials.jsx      # Customer reviews component
 │   └── OrderModal.jsx        # Modal form component for WhatsApp orders
 └── App.jsx                   # Main layout container
+```
 
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
+- **Frontend:** React 18+, Vite
 
-Frontend: React 18+, Vite
+- **Styling:** Tailwind CSS (v4), Lucide React (Icons)
 
-Styling: Tailwind CSS (v4), Lucide React (Icons)
+- **Containerization:** Docker (Multi-stage build), Nginx (Alpine)
 
-Containerization: Docker (Multi-stage build), Nginx (Alpine)
+- **Deployment:** Vercel / Netlify / Docker Container
 
-Deployment: Vercel / Netlify / Docker Container
+## 🚀 Quick Start
 
-🚀 Quick Start
+### Prerequisites
 
-Prerequisites
+- Node.js (v18 or higher)
 
-Node.js (v18 or higher)
+- npm or yarn
 
-npm or yarn
+## Installation & Local Setup
 
-Installation & Local Setup
+### 1. Clone the repository:
 
-Clone the repository:
-
+```bash
 git clone git@github.com:aldinmbrk/react-landing-mastercool.git
 cd react-landing-mastercool
+```
 
+### 2. Install dependencies:
 
-Install dependencies:
-
+```bash
 npm install
+```
 
+### 3. Start development server:
 
-Start development server:
-
+```bash
 npm run dev
+```
 
+### 4. Open your browser and navigate to http://localhost:5173.
 
-Open your browser and navigate to http://localhost:5173.
-
-🐳 Docker Deployment
+## 🐳 Docker Deployment
 
 Run the application inside a lightweight container powered by Nginx:
 
+```bash
 # Build and run with Docker Compose
 docker compose up -d --build
-
+```
 
 Access the production build at http://localhost:8080.
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
 
-📝 License
+## 📝 License
 
 Distributed under the MIT License. See LICENSE for more information.
